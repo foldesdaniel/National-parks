@@ -1,0 +1,32 @@
+Az alábbi felmérésben, ha részt tudna venni, azzal nagyon sokat tudna segíteni kutatói munkánkban.
+A felmérés kitöltésével továbbá részt vesz nyereményjátékunkban, amit a hónap végén fogunk kisorsolni.
+A fődíj: ön által választott magyarországi nemzeti parkok valamelyikében családjával eltölthet 1 hetet
+ingyenesen a támogatott szállások valamelyikében.
+
+
+Ha szeretne segíteni a felmérésben, kérem töltse ki az alábbi űrlapot.
+----------------------------------------------------------------------
+
+Eddig bevitt adatok törlése (gomb)
+
+Járt-e már nemzeti parkban Magyarországon? (igen/nem radio)
+
+Ha igen, akkor kérem jeölje be, hogy melyekben: (10 db checkbox)
+
+Járt-e már nemzeti parkban Külföldön?
+
+Ha igen, akkor kérem írja le, hogy melyekben: (textbox)
+
+Miért tartja fontosnak a nemzeti parkok létezését? (textbox)
+
+Mennyire tartja fontosnak a természetvédelmet? (1-5 radio)
+
+Saját adatok
+
+Név: (text)
+
+Email: (text)
+
+Kor: (<18; 18-26; 26-35; 35-50; 50< radio)
+
+Elküld (gomb)

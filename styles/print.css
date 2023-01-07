@@ -1,0 +1,51 @@
+header {
+    display: none;
+}
+
+body {
+    color: #000 !important;
+}
+
+caption {
+    color: #000 !important;
+}
+
+.daynight {
+    display: none;
+}
+
+.hide {
+    display: none;
+}
+
+.content {
+    display: block;
+}
+
+.position-content {
+    float: none;
+    width: 100%;
+}
+
+.aside-right {
+    float: left;
+    width: 100%;
+}
+
+.aside-right img {
+    width: 50%;
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.margin-left-80 {
+    margin: 0;
+}
+
+figcaption {
+    text-align: left;
+}
+
+table {
+    margin: 10px;
+}

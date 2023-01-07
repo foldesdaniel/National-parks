@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" media="print" href="styles/print.css" />
+    <script src="scripts/script.js"></script>
+    <title>Nemzeti Parkok - Belföldi parkok</title>
+</head>
+
+<body>
+    <div class="outside">
+        <a href="#tartalom">Ugrás a tartalomra</a>
+    </div>
+    <header>
+        <nav class="menu">
+            <ul>
+                <li>
+                    <a class="menu-link" href="index.html">Főoldal</a>
+                </li>
+                <li class="active-li">
+                    <a class="menu-link active-a" href="belfoldi_parkok.html">Belföldi parkok</a>
+                </li>
+                <li>
+                    <a class="menu-link" href="kulfoldi_parkok.html">Külföldi parkok</a>
+                </li>
+                <li>
+                    <a class="menu-link" href="termeszetvedelem.html">Természetvédelem</a>
+                </li>
+                <li id="last">
+                    <a class="menu-link" href="urlap.html">Űrlap</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="daynight">
+            <div class="center-70">
+                <img id="daynight_icon" src="icons/night.png" alt="daynight" onclick="daynight()">
+            </div>
+            <div class="center-70 white-bg">
+                <img id="smallbig_icon" src="icons/big.png" alt="big" onclick="smallbig()">
+            </div>
+        </div>
+    </header>
+    <main>
+        <h1>Nemzeti parkok Magyarországon</h1>
+        <section id="tartalom">
+            <article>
+                <div class="content">
+                    <div class="position-content max-width">
+                        <div>
+                            <h2>Magyar Nemzeti Parkok</h2>
+                            <p>
+                                Magyarország területén <b><i>tíz</i></b> összefüggő, vagy mozaikos elrendezésű nemzeti
+                                parkövezetben állami feladatként, szervezetten, módszeresen gondoskodnak a
+                                <b><i>természeti értékek megóvásáról</i></b>. A kiemelten védett területek közül több a
+                                Világörökség része.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <table id="myTable">
+                <caption>
+                    <strong>Magyar Nemzeti Parkok</strong>
+                    <details>
+                        <summary>Összefoglaló</summary>
+                        <p>
+                            A táblázat négy oszlopból áll (nemzeti park neve, alapítási éve, területe és székhelye), az
+                            egyes
+                            sorokban pedig az adott nemzeti park adatai láthatóak.
+                        </p>
+                    </details>
+                </caption>
+                <tr>
+                    <th>Nemzeti park</th>
+                    <th>Alapítva</th>
+                    <th>Területe (km<sup>2</sup>)</th>
+                    <th>Székhelye</th>
+                </tr>
+                <tr>
+                    <td>
+                        Hortobágyi
+                        Nemzeti Park
+                    </td>
+                    <td>1973</td>
+                    <td>809,572</td>
+                    <td>Debrecen</td>
+                </tr>
+                <tr>
+                    <td>
+                        Kiskunsági
+                        Nemzeti Park
+                    </td>
+                    <td>1975</td>
+                    <td>506,410</td>
+                    <td>Kecskemét</td>
+                </tr>
+                <tr>
+                    <td>
+                        Bükki Nemzeti
+                        Park
+                    </td>
+                    <td>1977</td>
+                    <td>422,834</td>
+                    <td>Eger</td>
+                </tr>
+                <tr>
+                    <td>
+                        Aggteleki
+                        Nemzeti Park
+                    </td>
+                    <td>1985</td>
+                    <td>201,837</td>
+                    <td>Jósvafő</td>
+                </tr>
+                <tr>
+                    <td>
+                        Fertő-Hanság
+                        Nemzeti Park
+                    </td>
+                    <td>1991</td>
+                    <td>238,913</td>
+                    <td>Sarród</td>
+                </tr>
+                <tr>
+                    <td>
+                        Duna-Dráva
+                        Nemzeti Park
+                    </td>
+                    <td>1996</td>
+                    <td>497,516</td>
+                    <td>Pécs</td>
+                </tr>
+                <tr>
+                    <td>
+                        Körös-Maros
+                        Nemzeti Park
+                    </td>
+                    <td>1997</td>
+                    <td>512,465</td>
+                    <td>Szarvas</td>
+                </tr>
+                <tr>
+                    <td>
+                        Balaton-felvidéki
+                        Nemzeti Park
+                    </td>
+                    <td>1997</td>
+                    <td>570,190</td>
+                    <td>Csopak</td>
+                </tr>
+                <tr>
+                    <td>
+                        Duna-Ipoly
+                        Nemzeti Park
+                    </td>
+                    <td>1997</td>
+                    <td>606,760</td>
+                    <td>Budapest/Esztergom</td>
+                </tr>
+                <tr>
+                    <td>
+                        Őrségi Nemzeti
+                        Park
+                    </td>
+                    <td>2002</td>
+                    <td>440,483</td>
+                    <td>Őriszentpéter</td>
+                </tr>
+            </table>
+            <article>
+                <div class="content">
+                    <div class="position-content">
+                        <div>
+                            <h2>Hortobágyi Nemzeti Park</h2>
+                            <p>
+                                <b><i>Hortobágyi Nemzeti Park</i></b> (Az alapítás éve: 1973) A Hortobágyi Nemzeti Park
+                                az európai kontinens legnagyobb szikes pusztája, területe 81 ezer hektár.
+                                Vidékén a mai napig fennmaradtak a külterjes állattartás gazdag
+                                hagyományai, és azok az ősi háziállatok, amelyek évszázadokon keresztül
+                                formálták a tájat. A nemzeti parkban található szikes mocsarak, valamint az
+                                ötezer hektárnyi kiterjedésű halastórendszer növény- és állatvilága fokozott
+                                védettséget élvez. A hortobágyi puszta 1999 óta a Világörökség része.
+                            </p>
+                        </div>
+                    </div>
+                    <aside class="position-content aside-right margin-left-80">
+                        <figure>
+                            <img class="img-right img-max" src="Images/Belfold/hortobagy.jpg"
+                                alt="Hortobágyi Nemzeti Parkról látható kép, ahol naplementében repülnek a madarak a tó felett."
+                                title="Hortobágyi Nemzeti Park">
+                            <figcaption>Hortobágyi Nemzeti Park</figcaption>
+                        </figure>
+                    </aside>
+                </div>
+            </article>
+            <article>
+                <div class="content">
+                    <div class="position-content">
+                        <div>
+                            <h2>Kiskunsági Nemzeti Park</h2>
+                            <p>
+                                <b><i>Kiskunsági Nemzeti Park</i></b> (Az alapítás éve: 1975) A Kiskunsági Nemzeti
+                                Parkban a természeti és néprajzi értékek együttese figyelhető meg. A 48 ezer
+                                hektárnyi területű parkban 23 ezer hektár bioszféra rezervátum. Két nagy
+                                halastórendszere - a Fehér-tó és a Csaj-tó - madárvilágáról híres, itt találhatók
+                                a Dél-Alföld legjelentősebb madárvonuló, pihenő- és táplálkozó helyei. A
+                                parkon belüli tájvédelmi körzetek közül az 1971 óta védett mártélyi Tisza-part
+                                a képzőművészek kedvelt alkotóhelye.
+                            </p>
+                        </div>
+                    </div>
+                    <aside class="position-content aside-right margin-left-80">
+                        <figure>
+                            <img class="img-right img-max" src="Images/Belfold/kiskunsag.jpg"
+                                alt="Kiskunsági Nemzeti Parkról egyik folyójáról látható tájkép nappal."
+                                title="Kiskunsági Nemzeti Park">
+                            <figcaption>Kiskunsági Nemzeti Park</figcaption>
+                        </figure>
+                    </aside>
+                </div>
+            </article>
+            <article>
+                <div class="content">
+                    <div class="position-content">
+                        <div>
+                            <h2>Bükki Nemzeti Park</h2>
+                            <p>
+                                <b><i>Bükki Nemzeti Park</i></b> (Az alapítás éve: 1976) A Bükki Nemzeti Park
+                                Magyarország legnagyobb hegyvidéki, erdős nemzeti parkja. Változatos
+                                területén igen gazdag növényvilág figyelhető meg, az itt előforduló állatfajok
+                                száma 22 ezer körüli. A park védendő kincsei a földtani, felszínalaktani és
+                                barlangtani értékek: a Bükk-hegységben 853 barlangot tártak fel, közülük 45
+                                fokozottan védett. Nagyszámú régészeti lelőhelyei közül a legjelentősebbek az
+                                ősember által lakott barlangok. A nemzeti park 43 ezer hektáros területéből
+                                5730 hektár fokozottan védett.
+                            </p>
+                        </div>
+                    </div>
+                    <aside class="position-content aside-right margin-left-80">
+                        <figure>
+                            <img class="img-right img-max" src="Images/Belfold/bukki.jpg"
+                                alt="Bükki Nemzeti Parkról egyik folyójáról látható tájkép nappal."
+                                title="Bükki Nemzeti Park">
+                            <figcaption>Bükki Nemzeti Park</figcaption>
+                        </figure>
+                    </aside>
+                </div>
+            </article>
+            <article>
+                <div class="content">
+                    <div class="position-content">
+                        <div>
+                            <h2>Aggteleki Nemzeti Park</h2>
+                            <p>
+                                <b><i>Aggteleki Nemzeti Park</i></b> (Az alapítás éve: 1985) Az Aggteleki-karszt vidékén
+                                alapított Aggteleki Nemzeti Park több mint 20 ezer hektáros területe
+                                különleges természeti értékeket véd. Legismertebb az a barlangrendszer,
+                                amely - a Szlovák-karszt barlangjaival együtt - 1995-től a Világörökség része.
+                                Az élőlények védelmén túl a nemzeti park hivatott az egész táj képének
+                                fenntartására, melybe beletartozik a népi építészet és tárgykultúra megőrzése,
+                                a tájformáló és tájépítészeti alkotások védelme, valamint a régészeti, kultúr- és
+                                ipartörténeti értékek megmentése is.
+                            </p>
+                        </div>
+                    </div>
+                    <aside class="position-content aside-right margin-left-80">
+                        <figure>
+                            <img class="img-right img-max" src="Images/Belfold/aggteleki.jpg"
+                                alt="Aggteleki Nemzeti Park egy taváról látható tájkép nappal."
+                                title="Aggteleki Nemzeti Park">
+                            <figcaption>Aggteleki Nemzeti Park</figcaption>
+                        </figure>
+                    </aside>
+                </div>
+            </article>
+            <article>
+                <div class="content">
+                    <div class="position-content">
+                        <div>
+                            <h2>Fertő-Hanság Nemzeti Park</h2>
+                            <p>
+                                <b><i>Fertő Hanság Nemzeti Park</i></b> (Az alapítás éve: 1991) A Magyarország és
+                                Ausztria
+                                határán fekvő Fertő-Hanság Nemzeti Park az egykor hatalmas mocsár- és
+                                lápvilág egyedülálló növény- és állattani, tájképi, néprajzi és kultúrtörténeti
+                                értékeinek menedékhelye. A nemzeti park osztrák részét, az 1992-ben
+                                létrehozott, 9500 hektáros Nationalpark Neusiedler See-Seewinkel-t 1994-ben
+                                kapcsolták össze a 23 587 hektáros magyar területtel. A parkhoz tartozó Fertőtó és
+                                környéke
+                                a Világörökség része.
+                            </p>
+                        </div>
+                    </div>
+                    <aside class="position-content aside-right margin-left-80">
+                        <figure>
+                            <img class="img-right img-max" src="Images/Belfold/ferto.jpg"
+                                alt="Fertő-Hanság Nemzeti Park taváról látható egy tájkép, ami késő délután készült."
+                                title="Fertő-Hanság Nemzeti Park">
+                            <figcaption>Fertő-Hanság Nemzeti Park</figcaption>
+                        </figure>
+                    </aside>
+                </div>
+            </article>
+            <article>
+                <div class="content">
+                    <div class="position-content">
+                        <div>
+                            <h2>Duna-Dráva Nemzeti Park</h2>
+                            <p>
+                                <b><i>Duna-Dráva Nemzeti Park</i></b> (Az alapítás éve: 1996) A Duna-Dráva Nemzeti
+                                Park a Dél-Dunántúl térségéből 49 478 hektárnyi területet fog egybe. A
+                                különösen értékes élőhelyek védetté nyilvánításának céljául a folyók,
+                                mellékágrendszerük, valamint az érintett területek természeti értékeinek, a
+                                felszíni és felszín alatti vízkészleteknek, továbbá az érintett területek erdeinek,
+                                termőtalajának és más, megújuló természeti erőforrásainak védelmét jelölték
+                                meg.
+                            </p>
+                        </div>
+                    </div>
+                    <aside class="position-content aside-right margin-left-80">
+                        <figure>
+                            <img class="img-right img-max" src="Images/Belfold/duna-drava.jpg"
+                                alt="Duna-Dráva Nemzeti Park"
+                                title="Duna-Dráva Nemzeti Park egy folyójáról látható tájkép a magaslatból, ahonnan szép kilátás nyílik az erdős területre.">
+                            <figcaption>Duna-Dráva Nemzeti Park</figcaption>
+                        </figure>
+                    </aside>
+                </div>
+            </article>
+            <article>
+                <div class="content">
+                    <div class="position-content">
+                        <div>
+                            <h2>Balaton-felvidéki Nemzeti Park</h2>
+                            <p>
+                                <b><i>Balaton-felvidéki Nemzeti Park</i></b> (Az alapítás éve: 1997) A Balaton-felvidéki
+                                Nemzeti Park a Balaton északi partvidékéhez kapcsolódva, nyugat felé egyre
+                                szélesedő sávban húzódik a Kis-Balaton térségéig. Összterülete 56 997 hektár,
+                                melyből 10 471 hektár fokozott védelem alatt áll. A nemzeti park területi
+                                egységei: a Tihanyi-félsziget, a Pécselyi-medence, a Káli-medence, a
+                                Tapolcai-medence és a tanúhegyek, Zala és Somogy megyében a Keszthelyihegység és a
+                                Kis-Balaton, továbbá a teljes
+                                Balaton-part és a Balaton öblei.
+                            </p>
+                        </div>
+                    </div>
+                    <aside class="position-content aside-right margin-left-80">
+                        <figure>
+                            <img class="img-right img-max" src="Images/Belfold/balaton.jpg"
+                                alt="Balaton-felvidéki Nemzeti Parkról látható tájkép nappal, ahol dombok és alföldi terület látható."
+                                title="Balaton-felvidéki Nemzeti Park">
+                            <figcaption>Balaton-felvidéki Nemzeti Park</figcaption>
+                        </figure>
+                    </aside>
+                </div>
+            </article>
+            <article>
+                <div class="content">
+                    <div class="position-content">
+                        <div>
+                            <h2>Duna-Ipoly Nemzeti Park</h2>
+                            <p>
+                                <b><i>Duna-Ipoly Nemzeti Park</i></b> (Az alapítás éve: 1997) A Duna-Ipoly Nemzeti Park
+                                Budapesttől északi irányban, a Pilis és a Börzsöny hegység nagyobb részén, a
+                                Duna és az Ipoly folyók között helyezkedik el. A több mint 60 ezer hektárnyi
+                                terület egyediségét a folyóvölgyek, a hegységek és a síkság találkozása adja.
+                                Legszebb vidéke a Dunakanyar, amely a folyónak a Börzsöny és a Visegrádihegység közötti,
+                                több ezer éve lezajlott
+                                áttörésének helyszíne. A Dunán
+                                kialakult kisebb-nagyobb szigetek Esztergom és Budapest között szintén részei
+                                a nemzeti parknak.
+                            </p>
+                        </div>
+                    </div>
+                    <aside class="position-content aside-right margin-left-80">
+                        <figure>
+                            <img class="img-right img-max" src="Images/Belfold/duna-ipoly.jpg"
+                                alt="Duna-Ipoly Nemzeti Park folyójáról látható kép magaslatból nappal, ahogy körbe ölel egy dombot."
+                                title="Duna-Ipoly Nemzeti Park">
+                            <figcaption>Duna-Ipoly Nemzeti Park</figcaption>
+                        </figure>
+                    </aside>
+                </div>
+            </article>
+            <article>
+                <div class="content">
+                    <div class="position-content">
+                        <div>
+                            <h2>Körös-Maros Nemzeti Park</h2>
+                            <p>
+                                <b><i>Körös-Maros Nemzeti Park</i></b> (Az alapítás éve: 1997) A Körös-Maros Nemzeti
+                                Park a romániai hegységek lábától a Tiszáig húzódó, egyedi arculatú táj
+                                megmaradt értékeit igyekszik megőrizni. Ezek jó része a vízhez kötődik: a
+                                Körösök és a Maros folyó vízrendszeréhez, az ártéri erdőkhöz, a Sárrét
+                                környéki mocsárfoltokhoz. Az 51 125 hektárnyi területű nemzeti parkban a
+                                kardoskúti Fehér-tó és a Biharugrai halastavak vizes élőhelyeinek szerepe a
+                                madárvonulásban nemzetközileg is jelentős, a tájegység a Ramsari egyezmény
+                                hatálya alá tartozik.
+                            </p>
+                        </div>
+                    </div>
+                    <aside class="position-content aside-right margin-left-80">
+                        <figure>
+                            <img class="img-right img-max" src="Images/Belfold/koros-maros.jpg"
+                                alt="Körös-Maros Nemzeti egy taváról látható tájkép késő délután."
+                                title="Körös-Maros Nemzeti Park">
+                            <figcaption>Körös-Maros Nemzeti Park</figcaption>
+                        </figure>
+                    </aside>
+                </div>
+            </article>
+            <article>
+                <div class="content">
+                    <div class="position-content">
+                        <div>
+                            <h2>Őrségi Nemzeti Park</h2>
+                            <p>
+                                <b><i>Őrségi Nemzeti Park</i></b> (Az alapítás éve: 2002 ) Az Őrségi Nemzeti Park az
+                                1978-
+                                ban alapított Őrségi Tájvédelmi Körzetből, valamint a természetközeli
+                                állapotban lévő környező területekből alakult. A 43 933 hektárnyi nemzeti
+                                parkból 3104 hektár fokozottan védett. Ez az ország legnyugatibb vidéke, ahol
+                                a népi hagyományok és szokások változatlan formában napjainkig
+                                megőrződtek.
+                            </p>
+                        </div>
+                    </div>
+                    <aside class="position-content aside-right margin-left-80">
+                        <figure>
+                            <img class="img-right img-max" src="Images/Belfold/orsegi.jpg" alt="Őrségi Nemzeti Park"
+                                title="Őrségi Nemzeti Park füves területéről látható nappal egy tájkép.">
+                            <figcaption>Őrségi Nemzeti Park</figcaption>
+                        </figure>
+                    </aside>
+                </div>
+            </article>
+            <article class="hide">
+                <div class=" content">
+                    <div class="position-content">
+                        <div>
+                            <h3>Videó a magyar nemzeti parkról:</h3>
+                            <a href="video.xhtml" target="_blank" class="a-video" id="video">Videó átirata</a>
+                        </div>
+                    </div>
+                    <aside class="position-content aside-right margin-left-80">
+                        <video controls poster="Images/Poster/poster.PNG">
+                            <source src="videos/video.mp4" type="video/mp4">
+                            <source src="videos/video.ogg" type="video/ogg">
+                            <source src="videos/video.webm" type="video/webm">
+                        </video>
+                    </aside>
+                </div>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <span class="forras">Forrás:</span> <a href="https://hu.wikipedia.org/wiki/Nemzeti_park" target="_blank"
+            class="a-small">https://hu.wikipedia.org/wiki/Nemzeti_park</a><br>
+        <a href="https://www.youtube.com/watch?v=XztkOYYTOP8" target="_blank"
+            class="a-small a-f">https://www.youtube.com/watch?v=XztkOYYTOP8</a>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" media="print" href="styles/print.css" />
+    <script src="scripts/script.js"></script>
+    <title>Nemzeti Parkok - Űrlap</title>
+</head>
+
+<body>
+    <div class="outside">
+        <a href="#tartalom">Ugrás a tartalomra</a>
+    </div>
+    <header>
+        <nav class="menu">
+            <ul>
+                <li>
+                    <a class="menu-link" href="index.html">Főoldal</a>
+                </li>
+                <li>
+                    <a class="menu-link" href="belfoldi_parkok.html">Belföldi parkok</a>
+                </li>
+                <li>
+                    <a class="menu-link" href="kulfoldi_parkok.html">Külföldi parkok</a>
+                </li>
+                <li>
+                    <a class="menu-link" href="termeszetvedelem.html">Természetvédelem</a>
+                </li>
+                <li class="active-li" id="last">
+                    <a class="menu-link active-a" href="urlap.html">Űrlap</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="daynight">
+            <div class="center-70">
+                <img id="daynight_icon" src="icons/night.png" alt="daynight" onclick="daynight()">
+            </div>
+            <div class="center-70 white-bg">
+                <img id="smallbig_icon" src="icons/big.png" alt="big" onclick="smallbig()">
+            </div>
+        </div>
+    </header>
+    <main>
+        <h1>Űrlap</h1>
+        <section id="tartalom">
+            <article>
+                <div class="content">
+                    <div class="position-content max-width">
+                        <div>
+                            <h2>Kérdőív</h2>
+                            <p>
+                                A természeti értékek megvédésében óriási szerepet vállalnak Földünk nemzeti
+                                parkjai. Az efféle védett területek mentesek a mezőgazdasági és ipari
+                                hasznosítástól, így természetes állapotukban maradnak fenn az utókornak. A világ
+                                több ezer nemzeti parkja mindegyikének megvan a maga szépsége, vannak
+                                azonban egyedülállóan szépek is.
+                            </p>
+                            <br>
+                            <figure>
+                                <img class="img-right img-max" src="Images/Urlap/thank_you.jpg" alt="Köszönjük!"
+                                    title="Köszönjük!">
+                                <figcaption>Köszönjük!</figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                    <aside class="position-content aside-right margin-left-80">
+                        <form action="mailto:youraddr@domain.tld" id="myForm" method="POST">
+                            <fieldset>
+                                <legend>Kérdések</legend>
+                                <strong>Járt-e már nemzeti parkban Magyarországon?*</strong><br>
+                                <input type="radio" id="r11" name="r1" value="r11" required />
+                                <label for="r11">Igen</label>
+                                <input type="radio" id="r12" name="r1" value="r12" />
+                                <label for="r12">Nem</label>
+                                <br><br>
+                                <strong>Ha igen, akkor kérem jeölje be, hogy melyekben:</strong><br>
+                                <input type="checkbox" id="hortobagy" name="hortobagy" value="hortobagy" />
+                                <label for="hortobagy">Hortobágyi Nemzeti Park</label><br>
+                                <input type="checkbox" id="kiskunsag" name="kiskunsag" value="kiskunsag" />
+                                <label for="kiskunsag">Kiskunsági Nemzeti Park</label><br>
+                                <input type="checkbox" id="bukk" name="bukk" value="bukk" />
+                                <label for="bukk">Bükki Nemzeti Park</label><br>
+                                <input type="checkbox" id="aggtelek" name="aggtelek" value="aggtelek" />
+                                <label for="aggtelek">Aggteleki Nemzeti Park</label><br>
+                                <input type="checkbox" id="ferto" name="ferto" value="ferto" />
+                                <label for="ferto">Fertő-Hanság Nemzeti Park</label><br>
+                                <input type="checkbox" id="dunadrava" name="dunadrava" value="dunadrava" />
+                                <label for="dunadrava">Duna-Dráva Nemzeti Park</label><br>
+                                <input type="checkbox" id="balaton" name="balaton" value="balaton" />
+                                <label for="balaton">Balaton-felvidéki Nemzeti Park</label><br>
+                                <input type="checkbox" id="dunaipoly" name="dunaipoly" value="dunaipoly" />
+                                <label for="dunaipoly">Duna-Ipoly Nemzeti Park</label><br>
+                                <input type="checkbox" id="korosmaros" name="korosmaros" value="korosmaros" />
+                                <label for="korosmaros">Körös-Maros Nemzeti Park</label><br>
+                                <input type="checkbox" id="orseg" name="orseg" value="orseg" />
+                                <label for="orseg">Őrségi Nemzeti Park</label><br><br>
+                                <strong>Járt-e már nemzeti parkban Külföldön?*</strong><br>
+                                <input type="radio" id="r21" name="r2" value="r21" required />
+                                <label for="r21">Igen</label>
+                                <input type="radio" id="r22" name="r2" value="r22" />
+                                <label for="r22">Nem</label>
+                                <br><br>
+                                <strong>Ha igen, akkor kérem jeölje be, hogy melyekben:</strong><br>
+                                <textarea id="textarea" cols="50" rows="10"
+                                    placeholder="Kérem írja ide a nemzeti parkokat..."
+                                    maxlength="300"></textarea><br><br>
+                                <strong>Miért tartja fontosnak a nemzeti parkok létezését?</strong><br>
+                                <textarea id="textarea2" cols="50" rows="10" placeholder="Kérem írja ide a válaszát..."
+                                    maxlength="1000"></textarea><br>
+                            </fieldset>
+                            <fieldset>
+                                <legend>Az adataid</legend>
+                                <strong>Név:* </strong>
+                                <input type="text" name="name" id="name" size=20 maxlength="25" required /><br>
+                                <strong>Email:* </strong>
+                                <input type="text" name="email" id="email" size=30 maxlength="30" required /><br>
+                                <strong>Kor: </strong>
+                                <input type="radio" id="r31" name="r3" value="r31" />
+                                <label for="r31"> &lt;18</label>
+                                <input type="radio" id="r32" name="r3" value="r32" />
+                                <label for="r32"> 18-26</label>
+                                <input type="radio" id="r33" name="r3" value="r33" />
+                                <label for="r33"> 26-35</label>
+                                <input type="radio" id="r34" name="r3" value="r34" />
+                                <label for="r34"> 35-50</label>
+                                <input type="radio" id="r35" name="r3" value="r35" />
+                                <label for="r35"> 50&lt;</label>
+                            </fieldset>
+                            <fieldset>
+                                <legend>Adatok elküldése</legend>
+                                <input type="submit" value="Elküld" id="elkuld" class="button" />
+                                <input type="reset" value="Töröl" id="torol" class="button" />
+                            </fieldset>
+                        </form>
+                    </aside>
+                </div>
+            </article>
+        </section>
+    </main>
+</body>
+
+</html>
